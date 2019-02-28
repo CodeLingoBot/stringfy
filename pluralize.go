@@ -43,7 +43,7 @@ func NewPlural() *PluralSet {
 	return &PluralSet{}
 }
 
-// Adds custom plural to the word
+// AddPlural adds custom plural to the word
 func AddPlural(pl string) optPlural {
 	return func(ps *PluralSet) {
 		ps.plural = pl
